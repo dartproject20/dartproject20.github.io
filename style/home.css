@@ -177,7 +177,6 @@
     width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 .explore:hover{
     background-color: cornflowerblue;
 }
@@ -205,8 +204,8 @@
     width: 120%;
     letter-spacing: 1px;
     margin-top: 2%;
+    font-size: 90%;
 }
-
 .artistbttn{
     background: #070708e0;
     border-color: transparent;
@@ -223,7 +222,6 @@
 .artistbttn:hover{
     background-color: cornflowerblue;
 }
-
 .imgartist img{
     width: 45%;
     margin-top: 5%;
@@ -232,7 +230,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
-
 .contact{
     background-color: navy;
     padding: 2%;

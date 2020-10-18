@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <link href="style/home.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src=images/logo.jpeg class="logo"></a>
+            <nav class="navigation">
+                <ul class="main-nav">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="galery.html">GALERIA</a></li>
+                    <li><a href="fundations.html">FUNDACIONES</a></li>
+                    <li><a href="artist.html">ARTISTA</a></li>      
+                </ul>
+            </nav> 
+            <script type="text/javascript">
+                var picPaths = ["images/homeamarillo.jpeg","images/homerayas.jpeg","images/homecelulas.jpeg"];
+                var curPic = -1;
+                //preload the images for smooth animation
+                var imgO = new Array();
+                for(i=0; i < picPaths.length; i++) {
+                    imgO[i] = new Image();
+                    imgO[i].src = picPaths[i];
+                }
+            
+                function swapImage() {
+                    curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+                    imgCont.src = imgO[curPic].src;
+                    setTimeout(swapImage,10000);
+                }
+            
+                window.onload=function() {
+                    imgCont = document.getElementById('imgBanner');
+                    swapImage();
+                }
+            </script>
+        </header>
+        <div class="inicio">
+        <div class="imghome">
+            <img id="imgBanner" src="" alt="" />
+        </div>
+        <div class="proyectinfo">
+            <h1>Nuestro Proyecto</h1>
+            <p>A trav&eacute;s del arte, queremos despertar el sentido de solidaridad conectando a alguien que cuenta con  recursos, con quien  los necesita.
+                Este proyecto nace como una iniciativa familiar y es un  trabajo colectivo que busca desarrollar una plataforma que permita soportar a grupos vulnerables afectados especialmente en la coyuntura que vivimos en el 2020. Dart une el gusto por el arte con la solidaridad social y le permite a donantes conectarse con fundaciones reconocidas que ayuden a aliviar el impacto de la situaci&oacute;n actual. El donante selecciona una obra de arte y la recibe luego de realizar la donaci&oacute;n a la fundaci&oacute;n que &eacute;l seleccione.
+                </p>
+        </div>
+        </div>
+        <div class="main">
+            <div class="circle">
+                <div class="main-pro">
+                    <div class="cambio1" data-hover="El proceso de donaci&oacute;n es totalmente claro para quien es parte de &eacute;l y se realiza de forma directa a la fundaci&oacute;n. ">
+                        <h1>TRANSPARENCIA</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="main-pro">
+                    <div class="cambio2" data-hover="Apoyamos plenamente iniciativas sociales y con impacto directo en la vida de los afectados por el COVID-19 y por vulneraciones de derechos humanos. ">
+                        <h1>RESPONSABILIDAD</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="main-pro">
+                    <div class="cambio3" data-hover="Trabajamos con cada donante para materializar su idea y deseo de dar. ">
+                        <h1>ADAPTABILIDAD</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery">
+            <h1>Dona a una causa y recve CASOTO</h1>
+            <div class="cuadros">
+                <a href="cuadros/amarillo.html"><img src="images/amarillo1.jpeg" class="imgamarillo"></a>
+                <a href="cuadros/blue.html"><img src="images/azul1.jpeg" class="imgazul"></a>
+                <a href="cuadros/corazon.html"><img src="images/corazon1.jpeg" class="imgcorazon"></a>
+                <a href="cuadros/rayas.html"><img src="images/rayas1.jpeg" class="imgrayas"></a>
+            </div>
+            <a href="galery.html"><button class="explore">Explorar</button></a>
+        </div>
+        
+        <div class="artista">
+            <div class="infoartista">
+                <h1>El artista</h1>
+                <p>Camilo es un alma libre que disfruta plena y conscientemente de sus alrededores. Su atenci&oacute;n al detalle hace que vea el mundo con mas profundidad y conciencia en vez de fugacidad.  
+                </p>
+                <p>Su creaci&oacute;n es un proceso de goce y exploraci&oacute;n. Se encierra en su estudio, escoge un artista o grupo musical y lo escucha a todo volumen para ser fuente de inspiraci&oacute;n. M&uacute;sica con historia, contenido social y recuerdos.
+                    </p>
+                <a href="artist.html"><button class="artistbttn">Mas informaci&oacute;n</button></a>
+            </div>
+            <div class="imgartist">
+                <img src="images/camilo1.jpeg">
+            </div>
+        </div>
+            
+
+    </body>
+    <div class="contact">
+        <div class="contactInfo">
+        <img src=images/logo2.png class="logo">
+        </div>
+        <div class="contact-form"> 
+            <h1>Cont&aacute;ctenos</h1>
+            <form action="https://formspree.io/dartproject20@gmail.com" method="POST">
+                <input name="name" type="text" class="form-control" placeholder="Nombre" required><br>
+
+                <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+
+                <textarea name="message" class="form-control" placeholder="Mendaje" rows="4" required></textarea><br>
+                
+                <input type="submit" class="form-control submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</html>

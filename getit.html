@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="style/home.css" rel="stylesheet" type="text/css">
+        <link href="style/getit.css" rel="stylesheet" type="text/css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+        <script src="./jscript/getit.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src=images/logo.jpeg class="logo"></a>
+            <nav class="navigation">
+                <ul class="main-nav">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="galery.html">GALERIA</a></li>
+                    <li><a href="fundations.html">FUNDACIONES</a></li>
+                    <li><a href="artist.html">ARTISTA</a></li>      
+                </ul>
+            </nav> 
+        </header>
+        <div class="GetIt">
+        <h1>Submit request</h1>
+        <form action="https://formspree.io/dartproject20@gmail.com" method="POST">
+            <label>
+                <input type="text" name="Name" class="name" placeholder="Name"/>
+            </label>
+            <label>
+                <input type="email" name="Email" class="email" placeholder="Email"/>
+            </label>
+            <label>
+                <textarea name="Message" class="message" placeholder="Message" ></textarea>
+            </label>
+            <div class="status"></div>
+            <button type="submit" class="submit" value="Send">Submit</button>
+        </form>
+        </div>
+    </body>
+</html>

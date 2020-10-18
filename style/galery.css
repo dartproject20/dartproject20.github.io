@@ -1,0 +1,36 @@
+.imgrow {
+  text-align: center;
+  margin: 3%;
+  transition: 0.3s;
+}
+
+.imgcolumn {
+  flex: 50%;
+  padding: 0 4px;
+  position: relative;
+  display: flex;
+}
+
+.imgcolumn img {
+  margin-top: 5%;
+  margin-bottom: 4%;
+  vertical-align: middle;
+  width: 95%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.cuadroinfo{
+  width: 30%;
+}
+.cuadroinfo h1{
+  font-size: 100%;
+  margin-top: 2%;
+}
+.cuadroinfo p{
+  margin-bottom: 2%;
+}
+.cuadroinfo:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.514);
+}
+
+

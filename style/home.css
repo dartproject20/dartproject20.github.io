@@ -1,0 +1,303 @@
+*
+{
+    margin: auto;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 20%;
+}
+
+.main-nav{
+    text-align: center;
+    list-style: none;
+    margin-top: 1%;
+}
+
+.main-nav li{
+    display: inline-block;
+}
+
+.main-nav li a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 90%;
+    border-right: 0.5px solid black;
+}
+
+.main-nav li a:hover{
+    color: cornflowerblue;
+}
+.imghome img{
+    width: 100%;
+    height: auto;
+    margin-top: -12%;
+    position: absolute;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.proyectinfo{
+    background-color: #000000c4;
+    color: white;
+    width: 60%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    overflow: auto;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 75%;
+}
+.proyectinfo h1{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.proyectinfo p{
+    text-align: justify;
+    width: 90%;
+    margin-bottom: 5%;
+    font-size: 140%;
+}
+.inicio{
+    height: auto;
+    
+ }
+.main{
+    position: relative;
+    display: flex;
+    font-size: 100%;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 500px;
+}
+.circle{
+    position: relative;
+    background-color: #070708e0;
+    color: white;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.circle:hover{
+    background-color: cornflowerblue;
+}
+.main-pro{
+    text-align: center;
+    width: 70%;
+    overflow: auto;
+    position: relative;
+}
+.main-pro h1{
+    font-weight: 100;
+    font-size: 120%;
+    margin-top: 65%;
+}
+.cambio1:hover{
+    font-size: 85%;
+    margin-top: -20%;
+}
+.cambio1:hover:after{
+    content: attr(data-hover);
+    line-height: 20px;
+}
+.cambio2:hover{
+    font-size: 85%;
+    margin-top: -25%;
+}
+.cambio2:hover:after{
+    content: attr(data-hover);
+    line-height: 20px;
+}
+.cambio3:hover{
+    font-size: 85%;
+    margin-top: -10%;
+}
+.cambio3:hover:after{
+    content: attr(data-hover);
+    line-height: 20px;
+}
+
+.gallery{
+    height: 450px;
+    text-align: center;
+}
+
+.gallery h1{
+    margin: 3%;
+    font-weight: 100;
+    text-shadow: 1px 1px  rgba(0, 0, 0, 0.603);
+}
+.cuadros{
+    position: relative;
+    display: block;
+    width: 90%;
+}
+
+.cuadros img{
+    margin: 0.05%;
+    border: 1.5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.cuadros img:hover{
+    border: 2px solid black;
+}
+.imgamarillo{
+    width: 35%;
+}
+.imgazul{
+    width: 17%;
+}
+.imgcorazon{
+    width: 12.7%;
+}
+.imgrayas{
+    width: 28%;
+}
+.explore{
+    background: #070708e0;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    height: 50px;
+    margin-top: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.explore:hover{
+    background-color: cornflowerblue;
+}
+
+.artista{
+    position: relative;
+    display: flex;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.infoartista{ 
+    text-align: justify;
+    margin-left: 15%;
+}
+
+.infoartista h1{
+    text-transform: uppercase;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.infoartista p{
+    width: 120%;
+    letter-spacing: 1px;
+    margin-top: 2%;
+}
+
+.artistbttn{
+    background: #070708e0;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    width: 120%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.artistbttn:hover{
+    background-color: cornflowerblue;
+}
+
+.imgartist img{
+    width: 45%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.contact{
+    background-color: navy;
+    padding: 2%;
+    margin: auto;
+    display: flex;
+}
+.contact h1{
+    display: inline-table;
+    margin: 5px;
+}
+.contact ul{
+    display: inline-table;
+    list-style: none;
+    
+}
+.contact li{
+    margin: 15px;
+}
+.contact-form{
+    
+    background-color: whitesmoke;
+    width: 40%;
+}
+.contact-form h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 15px; 
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.contact img{
+    width:30%;
+}
+.contactInfo{
+    text-align: left;
+    margin-left: 3%;
+}
+.form-control{
+    background:transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 10px; 
+    width:90%;
+    margin-left: 5%;
+}
+input{
+    height: 30px;
+}
+
+form .submit{
+    background: #070708e0;
+    border-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+form .submit:hover{
+    background: cornflowerblue;
+    color: black;
+}

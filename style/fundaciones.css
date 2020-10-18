@@ -1,0 +1,61 @@
+.nuestrasFundaciones{
+    overflow: auto;
+    width: 77%;
+    height: auto ;
+    background-color: whitesmoke;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.nuestrasFundaciones p{
+    text-align: justify;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.cuadrado{
+    display: flex;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+}
+.fundacion{
+    width: 100%;
+    margin: 2%;
+    background-color: whitesmoke;
+    color: black;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+.fundacion img{
+    width: 80%;
+    height: 170px;
+    margin-top: 7%;
+}
+.fundacion p{
+    text-align: justify;
+    width: 80%;
+    font-size: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+button{
+    background: #070708e0;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 50;
+    letter-spacing: 2px;
+    height: 40px;
+    width: 75%;
+    text-transform: uppercase;
+    margin: 3%;
+    margin-bottom: 5%;
+}
+button:hover{
+    background-color: cornflowerblue;
+}

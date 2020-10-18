@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="../style/home.css" rel="stylesheet" type="text/css">
+        <link href="cuadrostyle/rayasnegro.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src=../images/logo.jpeg class="logo"></a>
+            <nav class="navigation">
+                <ul class="main-nav">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../galery.html">GALERIA</a></li>
+                    <li><a href="../fundations.html">FUNDACIONES</a></li>
+                    <li><a href="../artist.html">ARTISTA</a></li>      
+                </ul>
+            </nav> 
+        </header>
+        <div class="img-gallery">
+            <div id="big">
+                <img src="../images/rayasnegro1.jpeg">
+            </div>
+            <div id="sub">
+                <img src="../images/rayasnegro1.jpeg">
+                <img src="../images/rayasnegro2.jpeg">
+                <img src="../images/rayasnegro3.jpeg">
+                <img src="../images/rayasnegro4.jpeg">
+                <img src="../images/rayasnegro5.jpeg">
+            </div>
+        </div>
+        <script type="text/javascript">
+            var bigImg=document.getElementById('big');
+            var subImg=document.getElementById('sub').getElementsByTagName('img');
+
+            for(var i=0; i,subImg.length; i++){
+                subImg[i].addEventListener('click',full_image);
+            }
+            function full_image(){
+                var imgSrc=this.getAttribute('src');
+                bigImg.innerHTML="<img src="+imgSrc+">";
+            }
+        </script>
+        <div class="text">
+            <h1>Squaring Drops, 2019</h1>
+            <p> 76.2 x 101.6.4 x 3.8 cm </p>
+            <p> 30 x 40 x 1.5 in</p> 
+            <h2>T&eacute;cnica: acr&iacute;lico sobre lienzo</h2>
+            <h3>Precio: $850 </h3>  
+            <a href="../getit.html"><button>Cont&aacute;ctanos</button></a>
+        </div>
+        <img src="../images/pasos1.jpeg" class='pasos'>
+    </body>
+</html>

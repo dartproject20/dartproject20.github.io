@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project</title>
+        <link href="../style/home.css" rel="stylesheet" type="text/css">
+        <link href="cuadrostyle/amarillo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html"><img src=../images/logo.jpeg class="logo"></a>
+            <nav class="navigation">
+                <ul class="main-nav">
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../galery.html">GALERIA</a></li>
+                    <li><a href="../fundations.html">FUNDACIONES</a></li>
+                    <li><a href="../artist.html">ARTISTA</a></li>      
+                </ul>
+            </nav> 
+        </header>
+        <div class="img-gallery">
+            <div id="big">
+                <img src="../images/amarillo1.jpeg">
+            </div>
+            <div id="sub">
+                <img src="../images/amarillo1.jpeg">
+                <img src="../images/amarillo2.jpeg">
+                <img src="../images/amarillo3.jpeg">
+                <img src="../images/amarillo4.jpeg">
+                <img src="../images/amarillo5.jpeg">
+            </div>
+        </div>
+        <script type="text/javascript">
+            var bigImg=document.getElementById('big');
+            var subImg=document.getElementById('sub').getElementsByTagName('img');
+
+            for(var i=0; i,subImg.length; i++){
+                subImg[i].addEventListener('click',full_image);
+            }
+            function full_image(){
+                var imgSrc=this.getAttribute('src');
+                bigImg.innerHTML="<img src="+imgSrc+">";
+            }
+        </script>
+
+        <div class="text">
+        <h1>Strip Colorama, 2020</h1>
+        <p> 91.5 x 183 x 3.8 cm </p>
+        <p> 36 x 72 x 1.5 in</p> 
+        <h2>T&eacute;cnica: acr&iacute;lico sobre lienzo</h2>
+        <h3>Precio: $1.900 </h3>  
+        <a href="../getit.html"><button>Cont&aacute;ctanos</button></a>
+        </div>
+        <img src="../images/pasos1.jpeg" class='pasos'>
+</html>
